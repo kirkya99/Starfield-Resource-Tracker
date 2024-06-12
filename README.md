@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a1434ed-a11b-4437-be48-e2cf29a91a29/deploy-status)](https://app.netlify.com/sites/starfield-resource-manager/deploys)
 # Starfield-Resource-Tracker
 
 This template should help get you started developing with Vue 3 in Vite.
