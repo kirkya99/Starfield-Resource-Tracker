@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import { Slide } from 'vue3-burger-menu'
 import HelloWorld from './components/HelloWorld.vue'
+
+
 </script>
 
 <template>
@@ -12,6 +15,8 @@ import HelloWorld from './components/HelloWorld.vue'
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/login">Login</RouterLink>
+        <RouterLink to="/register">Register</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>

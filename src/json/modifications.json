@@ -1,0 +1,25 @@
+[
+  {
+    "Modification": "Accelerant",
+    "Resources": {
+      "Iron": 3,
+      "Neon": 3,
+      "Sealant": 3
+    }
+  },
+  {
+    "Modification": "Alloy Handle",
+    "Resources": {
+      "Aluminium": 4,
+      "Titanium": 2
+    }
+  },
+  {
+    "Modification": "Alloyed Steel Blade",
+    "Resources": {
+      "Cobalt": 3,
+      "Iron": 4,
+      "Pigment": 3
+    }
+  }
+]

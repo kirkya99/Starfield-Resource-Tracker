@@ -1,13 +1,15 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
-// https://firebase.google.com/docs/web/setup#available-libraries
+import {initializeApp} from 'firebase/app';
+import {getAuth} from "firebase/auth";
+import {getFirestore, collection} from 'firebase/firestore';
+import {getAnalytics} from "firebase/analytics";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+import type {FirebaseOptions} from 'firebase/app';
+import type {Auth} from 'firebase/auth';
+import type {Firestore, CollectionReference} from 'firebase/firestore';
+import type {Analytics} from 'firebase/analytics';
+
+// Firebase configuration options type
+const firebaseConfig: FirebaseOptions = {
     apiKey: "AIzaSyDaCfxM7eOjN4BOtH5eshfcpfla7qhkgUY",
     authDomain: "starfield-resource-tracker.firebaseapp.com",
     projectId: "starfield-resource-tracker",
@@ -17,10 +19,11 @@ const firebaseConfig = {
     measurementId: "G-R405TX4NP8"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const db = getFirestore(app);
-const auth = getAuth(app);
+export const firebaseApp = initializeApp(firebaseConfig);
 
-export {analytics, db, auth};
+export const auth: Auth = getAuth(firebaseApp);
+export const db: Firestore = getFirestore(firebaseApp);
+export const analytics: Analytics = getAnalytics(firebaseApp);
+
+export const modsRef: CollectionReference = collection(db, 'modifications');
+export const shoppingListRef: CollectionReference = collection(db, 'shopping');
