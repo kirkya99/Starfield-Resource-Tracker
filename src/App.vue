@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { Slide } from 'vue3-burger-menu'
 import HelloWorld from './components/HelloWorld.vue'
 
 
